@@ -1,0 +1,116 @@
+.contentContainer {
+    max-width: 1120px;
+    margin: 0 auto;
+    padding: 0 2rem;
+    /*ocupar toda a tela menos os 8rem do header e 3 do footer */
+    height: calc(100vh - 11rem);
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    h1 {
+        font-family: "Roboto", sans-serif;
+        font-weight: 900;
+        font-size: 2rem;
+    }
+
+    .cardFront {
+        background: linear-gradient(45deg, #bdc3c7, #2c3e5050);
+        height: 300px;
+        width: 520px;
+        border-radius: 5px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+
+        header {
+            width: 90%;
+            height: 4rem;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            h2  {
+                color: var(--cyan);
+                span {
+                    color: var(--gray-900);
+                }
+            }
+            img {
+                width: 100px;
+                height: 100px;
+            }
+        }
+
+        .chip {
+            margin-top: 2rem;
+            width: 80%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            img {
+                width: 50px;
+                height: auto;
+            }
+
+            h3 {
+                color: var(--white);
+            }
+        }
+
+        .inputs {
+            margin-top: 2rem;
+            width: 60%;
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+
+            input {
+                font-size: 34px;
+                width: 24rem;
+                border: 0;
+                border-bottom: 2px solid var(--gray-900);
+                margin: 5px;
+                background:  #bdc3c7;
+                outline: 0;
+                box-shadow: 0 0 0 0;
+
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+
+            input:focus {
+                border-bottom: 0;
+            }
+
+            span {
+                color: var(--gray-900);
+            }
+        }
+    }
+
+    .buttons {
+        height: 500px;
+        width: auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+
+        button {
+            margin: 3rem;
+            padding: 1rem;
+            width: 12rem;
+            border-radius: 5px;
+            border: none;
+            background: var(--orange);
+            color: var(--white);
+            font-weight: 900;
+        }
+    }
+    
+}
